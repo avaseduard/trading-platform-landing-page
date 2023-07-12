@@ -33,17 +33,29 @@
     <!-- Phone navigation bar -->
     <nav class="nav-phone">
       <div class="logo">LOGO</div>
-      <img class="phone-menu-open" src="./images/eva_menu-fill.svg" alt="open phone menu button" />
+      <img
+        class="phone-menu-open"
+        src="./images/eva_menu-fill.svg"
+        alt="open phone menu button"
+      />
     </nav>
 
     <!-- Phone menu container -->
     <div class="phone-menu-container">
-      <img class="phone-menu-button phone-menu-close" src="./images/close-icon.png" alt="close mobile menu button" />
+      <img
+        class="phone-menu-button phone-menu-close"
+        src="./images/close-icon.png"
+        alt="close mobile menu button"
+      />
 
       <ul class="phone-menu-buttons">
         <li>
           <button class="phone-menu-button button-language">
-            EN <img src="./images/entypo_chevron-small-down (2).svg" alt="select language button" />
+            EN
+            <img
+              src="./images/entypo_chevron-small-down (2).svg"
+              alt="select language button"
+            />
           </button>
         </li>
 
@@ -117,7 +129,11 @@
         <ul>
           <li>
             <button class="button-language">
-              EN <img src="./images/entypo_chevron-small-down (2).svg" alt="select language button" />
+              EN
+              <img
+                src="./images/entypo_chevron-small-down (2).svg"
+                alt="select language button"
+              />
             </button>
           </li>
 
@@ -218,7 +234,7 @@
 
     <!-- Testimonial section -->
     <div class="wrapper">
-      <section class="testimonial-section" id="about">
+      <section class="testimonial-section" id="about" data-carousel>
         <div class="left">
           <!-- Title -->
           <div class="title-container">
@@ -227,9 +243,12 @@
           </div>
           <!-- Arrows -->
           <div class="arrows">
-            <div class="arrow-container">
+            <div class="arrow-container" data-carousel-button="prev">
               <div class="circle">
-                <img src="./images/Ellipse 15.svg" alt="previous testimonial button" />
+                <img
+                  src="./images/Ellipse 15.svg"
+                  alt="previous testimonial button"
+                />
                 <img
                   src="./images/entypo_chevron-small-down.svg"
                   alt=""
@@ -238,37 +257,103 @@
               </div>
             </div>
 
-            <div class="arrow-container">
+            <div class="arrow-container" data-carousel-button="next">
               <div class="circle">
                 <img
                   src="./images/entypo_chevron-small-down (1).svg"
                   alt=""
                   class="arrow"
                 />
-                <img src="./images/Ellipse 15 (1).svg" alt="next testimonial button" />
+                <img
+                  src="./images/Ellipse 15 (1).svg"
+                  alt="next testimonial button"
+                />
               </div>
             </div>
           </div>
         </div>
 
+        <!-- User review -->
         <div class="right">
-          <!-- User review -->
-          <div class="user-review">
-            <img src="./images/Ellipse 14.png" alt="testimonial user image" />
-            <div class="user-name">
-              <h6>Albert Abello</h6>
-              <p>Director of Growth</p>
+          <div data-slides>
+            <div class="slide" data-active>
+              <div class="user-review">
+                <img
+                  src="./images/Ellipse 14.png"
+                  alt="testimonial user image"
+                />
+                <div class="user-name">
+                  <h6>Albert Abello</h6>
+                  <p>Director of Growth</p>
+                </div>
+              </div>
+              <div class="testimonial">
+                <img
+                  src="./images/quotes.svg"
+                  alt=""
+                  class="testimonial-image"
+                />
+                <p class="testimonial-text">
+                  This magical product actually works! It has radically changed
+                  the way we build our audiences. Increasing new customer sales
+                  by 6x in our most mature market.
+                </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="user-review">
+                <img
+                  src="./images/Ellipse 14.png"
+                  alt="testimonial user image"
+                />
+                <div class="user-name">
+                  <h6>Jane Doe</h6>
+                  <p>Director of Marketing</p>
+                </div>
+              </div>
+              <div class="testimonial">
+                <img
+                  src="./images/quotes.svg"
+                  alt=""
+                  class="testimonial-image"
+                />
+                <p class="testimonial-text">
+                  2nd slide lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Modi amet magnam iure quos, eius quia at culpa non.
+                  Similique inventore voluptatem beatae magni doloribus esse,
+                  deserunt ratione velit a dignissimos.
+                </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="user-review">
+                <img
+                  src="./images/Ellipse 14.png"
+                  alt="testimonial user image"
+                />
+                <div class="user-name">
+                  <h6>John Doe</h6>
+                  <p>Director of Production</p>
+                </div>
+              </div>
+              <div class="testimonial">
+                <img
+                  src="./images/quotes.svg"
+                  alt=""
+                  class="testimonial-image"
+                />
+                <p class="testimonial-text">
+                  3rd slide lorem, ipsum dolor sit amet consectetur adipisicing
+                  elit. Sapiente, dicta itaque sit sunt exercitationem, vel
+                  aliquid nam optio, nihil earum tenetur vero inventore harum
+                  non numquam et quibusdam iure iusto!
+                </p>
+              </div>
             </div>
           </div>
-          <div class="testimonial">
-            <img src="./images/quotes.svg" alt="" class="testimonial-image" />
-            <p class="testimonial-text">
-              This magical product actually works! It has radically changed the
-              way we build our audiences. Increasing new customer sales by 6x in
-              our most mature market.
-            </p>
-          </div>
-          <p class="testimonial-page">01 / 04</p>
+          <p class="testimonial-page">1 / 3</p>
         </div>
       </section>
     </div>
@@ -290,49 +375,77 @@
           <div class="question-container">
             <div class="question">
               <h3>How do I change my details?</h3>
-              <img class="faq-open" src="./images/bi_plus.svg" alt="open and close faq button" />
+              <img
+                class="faq-open"
+                src="./images/bi_plus.svg"
+                alt="open and close faq button"
+              />
             </div>
           </div>
 
           <div class="question-container">
             <div class="question">
               <h3>How do I change my details?</h3>
-              <img class="faq-open" src="./images/bi_plus.svg" alt="open and close faq button" />
+              <img
+                class="faq-open"
+                src="./images/bi_plus.svg"
+                alt="open and close faq button"
+              />
             </div>
           </div>
 
           <div class="question-container">
             <div class="question">
               <h3>How do I change my details?</h3>
-              <img class="faq-open" src="./images/bi_plus.svg" alt="open and close faq button" />
+              <img
+                class="faq-open"
+                src="./images/bi_plus.svg"
+                alt="open and close faq button"
+              />
             </div>
           </div>
 
           <div class="question-container">
             <div class="question">
               <h3>How do I change my details?</h3>
-              <img class="faq-open" src="./images/bi_plus.svg" alt="open and close faq button" />
+              <img
+                class="faq-open"
+                src="./images/bi_plus.svg"
+                alt="open and close faq button"
+              />
             </div>
           </div>
 
           <div class="question-container">
             <div class="question">
               <h3>How do I change my details?</h3>
-              <img class="faq-open" src="./images/bi_plus.svg" alt="open and close faq button" />
+              <img
+                class="faq-open"
+                src="./images/bi_plus.svg"
+                alt="open and close faq button"
+              />
             </div>
           </div>
 
           <div class="question-container">
             <div class="question">
               <h3>How do I change my details?</h3>
-              <img class="faq-open" src="./images/bi_plus.svg" alt="open and close faq button" />
+              <img
+                class="faq-open"
+                src="./images/bi_plus.svg"
+                alt="open and close faq button"
+              />
             </div>
           </div>
 
           <div class="question-container">
             <div class="question">
               <h3>How do I change my details?</h3>
-              <img class="faq-open" src="./images/bi_plus.svg" alt="open and close faq button" />
+              <img
+                class="faq-open"
+                src="./images/bi_plus.svg"
+                alt="open and close faq button"
+              />
             </div>
           </div>
         </div>

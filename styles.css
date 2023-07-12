@@ -372,6 +372,14 @@ nav ul li a {
   left: -48px;
 }
 
+.slide {
+  display: none;
+}
+
+.slide[data-active] {
+  display: block;
+}
+
 /* FAQ section */
 .faq-section {
   padding: 8%;
