@@ -1,4 +1,4 @@
-#Trading platform
+# Trading platform
 
 Created for a client based on the provided Figma design template.
 
